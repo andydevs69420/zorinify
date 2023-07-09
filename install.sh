@@ -1,21 +1,21 @@
+#!/bin/bash
 
 
-
-if [[ $(whoami) != 'root' ]]
+if [[ $(whoami) != 'root' ]];
  then
 	echo 'Please run as root'
 	exit
 fi
 
 # begin
-cp -r ./theme/zorin* /usr/share/themes/
+cp -r ./theme/Zorin* /usr/share/themes/
 cp -r ./extensions/* /usr/share/gnome-shell/extensions/
-
-gnome-extensions enable zorin-appindicator@zorinos.com
-gnome-extensions enable zorin-connect@zorinos.com
-gnome-extensions enable zorin-desktop-icons@zorinos.com
-gnome-extensions enable zorin-magic-lamp-effect@zorinos.com
-gnome-extensions enable zorin-menu@zorinos.com
-gnome-extensions enable zorin-printers@zorinos.com
-gnome-extensions enable zorin-taskbar@zorinos.com
-gnome-extensions enable zorin-window-move-effect@zorinos.com
+cp -r ./icons/* /usr/share/icons/
+cp -r ./fonts/truetype/* /usr/share/fonts/truetype/
+cp -r ./fonts/opentype/* /usr/share/fonts/opentype/
+apt install fonts-noto* -y
+fc-cache -f -v
+./enable.sh
+echo 'Done!!'
+echo "------------------------------------------"
+echo "Please execute command: ./enable.sh"
