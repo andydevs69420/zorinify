@@ -1,0 +1,18 @@
+{
+  "description": "Makes windows wobble when they move across the desktop.",
+  "name": "Zorin Window Move Effect",
+  "shell-version": [
+    "3.28",
+    "3.30",
+    "3.32",
+    "3.34",
+    "3.36",
+    "3.38",
+    "40",
+    "41",
+    "42",
+    "43"
+  ],
+  "uuid": "zorin-window-move-effect@zorinos.com",
+  "version": 19
+}

@@ -1,0 +1,18 @@
+{
+  "description": "Magic lamp effect when minimizing and restoring windows.",    
+  "name": "Zorin Magic Lamp Effect",
+  "shell-version": [
+    "3.28",
+    "3.30",
+    "3.32",
+    "3.34",
+    "3.36",
+    "3.38",
+    "40",
+    "41",
+    "42",
+    "43"
+  ],
+  "uuid": "zorin-magic-lamp-effect@zorinos.com",
+  "version": 13
+}
