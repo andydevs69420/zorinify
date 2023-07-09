@@ -1429,7 +1429,7 @@ var ScrollView = GObject.registerClass({
 });
 
 // Menu Button icon
-const ZORIN_ICON = Me.path + '/zorin-icon-symbolic.svg';
+const ATOM_APP_MENU_ICON = Me.path + '/atom-app-menu.svg';
 const APP_GRID_ICON = Me.path + '/app-grid-symbolic.svg';
 
 // Menu Button padding variable
@@ -1451,7 +1451,7 @@ class MenuButton extends St.BoxLayout {
         });
 
         this._settings = settings;
-        this._menu_icon = this._settings.get_boolean('logo-icon') ? ZORIN_ICON : APP_GRID_ICON;
+        this._menu_icon = this._settings.get_boolean('logo-icon') ? ATOM_APP_MENU_ICON : APP_GRID_ICON;
 
         this._iconSize = 32;
         this._icon = new St.Icon({
