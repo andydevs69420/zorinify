@@ -7,7 +7,8 @@ if [[ $(whoami) == 'root' ]];
 fi
 
 
-
+gsettings set org.gnome.desktop.interface gtk-theme ZorinBlue-Dark
+gsettings set org.gnome.desktop.wm.preferences theme ZorinBlue-Dark
 gnome-extensions enable zorin-appindicator@zorinos.com
 gnome-extensions enable zorin-connect@zorinos.com
 gnome-extensions enable zorin-desktop-icons@zorinos.com
